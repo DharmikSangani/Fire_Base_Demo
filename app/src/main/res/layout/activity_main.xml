@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_weight="1">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:layout_margin="10dp"
+          android:orientation="vertical"
+          android:background="#ebe6bd">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="Password/Email Authetiction"
+              android:textSize="25dp"
+              android:textStyle="bold"
+              />
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_margin="10dp"
+              app:endIconMode="clear_text"
+              app:startIconDrawable="@drawable/baseline_email_24"
+              android:hint="Email">
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="30sp"
+                  android:id="@+id/email"/>
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_margin="10dp"
+              app:endIconMode="password_toggle"
+              android:hint="Password">
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="30sp"
+                  android:id="@+id/password"/>
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.button.MaterialButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:backgroundTint="#e5b63b"
+              android:text="REGISTER"
+              app:background="@null"
+              android:id="@+id/register">
+          </com.google.android.material.button.MaterialButton>
+
+          <com.google.android.material.button.MaterialButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:layout_gravity="center"
+              android:backgroundTint="#e5b63b"
+              android:text="SIGN IN"
+              app:background="@null"
+              android:id="@+id/sign_in">
+          </com.google.android.material.button.MaterialButton>
+      </LinearLayout>
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:layout_margin="10dp"
+          android:orientation="vertical"
+          android:background="#f0d686">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="Phone Number Authetiction"
+              android:textSize="25dp"
+              android:textStyle="bold"
+              />
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_margin="10dp"
+              app:endIconMode="clear_text"
+              app:startIconDrawable="@drawable/baseline_call_24"
+              android:hint="Phone">
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="30sp"
+                  android:id="@+id/phone"/>
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.button.MaterialButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:backgroundTint="#e5b63b"
+              android:text="GET OTP"
+              app:background="@null"
+              android:id="@+id/get_otp_button">
+          </com.google.android.material.button.MaterialButton>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_margin="10dp"
+              app:endIconMode="password_toggle"
+              android:hint="OTP">
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textSize="30sp"
+                  android:id="@+id/otp"/>
+          </com.google.android.material.textfield.TextInputLayout>
+
+          <com.google.android.material.button.MaterialButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:backgroundTint="#e5b63b"
+              android:text="REGISTER"
+              app:background="@null"
+              android:id="@+id/phone_reg">
+          </com.google.android.material.button.MaterialButton>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:layout_weight="1"
+          android:background="#aed6f2">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Google Authetication"
+              android:gravity="center"
+              android:textSize="25dp"
+              android:textStyle="bold"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:orientation="horizontal">
+
+              <com.google.android.gms.common.SignInButton
+                  android:id="@+id/google_button"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="5dp"
+                  android:text="Text"
+                  android:layout_alignParentTop="true"
+                  android:layout_margin="10dp"
+                  android:textSize="18sp" />
+              <com.google.android.material.button.MaterialButton
+
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="30dp"
+                  android:layout_gravity="center"
+                  android:backgroundTint="#e5b63b"
+                  android:text="REGISTER"
+                  app:background="@null"
+                  >
+              </com.google.android.material.button.MaterialButton>
+          </LinearLayout>
+
+      </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>
